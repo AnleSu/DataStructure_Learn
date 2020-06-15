@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2c7de7a-e072-48c8-aed5-59e8712602e3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1dL4dOnUIyvClXOcKUWrfe9tIOI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="数据结构-双向链表" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2c7de7a-e072-48c8-aed5-59e8712602e3" name="Default Changelist" comment="" />
+      <created>1592191125201</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592191125201</updated>
+      <workItem from="1592191129991" duration="2714000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1730" height="368" key="GridCell.Tab.0.bottom" timestamp="1592205215569">
+      <screen x="0" y="23" width="2560" height="1297" />
+    </state>
+    <state width="1730" height="368" key="GridCell.Tab.0.bottom/0.23.2560.1294@0.23.2560.1294" timestamp="1592200820817" />
+    <state width="1730" height="368" key="GridCell.Tab.0.bottom/0.23.2560.1297@0.23.2560.1297" timestamp="1592205215569" />
+    <state width="1730" height="368" key="GridCell.Tab.0.center" timestamp="1592205215568">
+      <screen x="0" y="23" width="2560" height="1297" />
+    </state>
+    <state width="1730" height="368" key="GridCell.Tab.0.center/0.23.2560.1294@0.23.2560.1294" timestamp="1592200820815" />
+    <state width="1730" height="368" key="GridCell.Tab.0.center/0.23.2560.1297@0.23.2560.1297" timestamp="1592205215568" />
+    <state width="1730" height="368" key="GridCell.Tab.0.left" timestamp="1592205215568">
+      <screen x="0" y="23" width="2560" height="1297" />
+    </state>
+    <state width="1730" height="368" key="GridCell.Tab.0.left/0.23.2560.1294@0.23.2560.1294" timestamp="1592200820814" />
+    <state width="1730" height="368" key="GridCell.Tab.0.left/0.23.2560.1297@0.23.2560.1297" timestamp="1592205215568" />
+    <state width="1730" height="368" key="GridCell.Tab.0.right" timestamp="1592205215569">
+      <screen x="0" y="23" width="2560" height="1297" />
+    </state>
+    <state width="1730" height="368" key="GridCell.Tab.0.right/0.23.2560.1294@0.23.2560.1294" timestamp="1592200820816" />
+    <state width="1730" height="368" key="GridCell.Tab.0.right/0.23.2560.1297@0.23.2560.1297" timestamp="1592205215569" />
+    <state x="1348" y="276" key="new project wizard" timestamp="1592201059755">
+      <screen x="0" y="23" width="2560" height="1294" />
+    </state>
+    <state x="1348" y="276" key="new project wizard/0.23.2560.1294@0.23.2560.1294" timestamp="1592201059755" />
+  </component>
+</project>

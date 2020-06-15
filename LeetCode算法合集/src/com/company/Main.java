@@ -655,6 +655,22 @@ int minArray(int[] numbers) {
         return sortNode.next;
     }
 
+    public boolean hasCycle(ListNode head) {
+        if (head == null || head.next == null) {
+            return false;
+        }
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != slow) {
+            if (fast == null || fast.next == null) {
+                return false;
+            }
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return true;
+    }
+
 }
 
 class TreeNode {
@@ -709,5 +725,44 @@ class CQueue {
             stack2.addLast(stack1.removeLast());
         }
         return stack2.removeLast();
+    }
+}
+
+//队列实现栈
+class MyStack {
+    private Queue<Integer> q1 = new LinkedList<>();
+
+
+
+    /** Initialize your data structure here. */
+    public MyStack() {
+
+    }
+
+    /** Push element x onto stack. */
+    public void push(int x) {
+        q1.add(x);
+        int sz = q1.size();
+        while (sz > 1) {
+            q1.add(q1.remove());
+            sz--;
+        }
+
+
+    }
+
+    /** Removes the element on top of the stack and returns that element. */
+    public void pop() {
+        q1.remove();
+    }
+
+    /** Get the top element. */
+    public int top() {
+        return q1.peek();
+    }
+
+    /** Returns whether the stack is empty. */
+    public boolean empty() {
+        return q1.isEmpty();
     }
 }
