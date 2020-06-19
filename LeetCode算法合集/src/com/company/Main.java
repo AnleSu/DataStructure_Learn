@@ -35,7 +35,8 @@ public class Main {
 
 //        solution.printNumbers(2);
 
-        solution.buildTree(new int[]{3,9,20,15,7}, new int[]{9,3,15,20,7});
+//        solution.buildTree(new int[]{3,9,20,15,7}, new int[]{9,3,15,20,7});
+        solution.solveNQueens(8);
     }
 
     static int integerBreak(int n) {
@@ -670,6 +671,67 @@ int minArray(int[] numbers) {
         }
         return true;
     }
+
+
+//    八皇后问题
+    public List<List<String>> solveNQueens(int n) {
+        List<List<String>> res = new ArrayList<>();
+        check(0,n,res,new int[n]);
+        return res;
+
+    }
+
+    //    放置第n个皇后
+    private void check(int n,int max, List<List<String>> res, int[] array) {
+        if (n == max) {
+            print(res, array);
+            return;
+        }
+        for (int i = 0; i < max; i++) {
+//            先把这个皇后 放入该行第一列
+            array[n] = i;
+            if (judge(n,array)) {
+                check(n + 1, max,res, array);
+            } else { //冲突 继续执行array[n] = i  因为i++会继续遍历
+
+            }
+        }
+    }
+
+    //    当放置第n个皇后 检查和前面已经摆放的皇后冲突
+    private boolean judge(int n, int[] array) {
+        for (int i = 0; i < n; i++) {
+//          array[i] == array[n] 是否在同一列
+//          Math.abs(n - i) == Math.abs(array[n] - array[i]  是否在同一斜线  Math.abs()求绝对值
+            if (array[i] == array[n] || Math.abs(n - i) == Math.abs(array[n] - array[i])) {
+                return false;
+            }
+
+        }
+        return true;
+    }
+
+    //    输出结果
+    private void print(List<List<String>> res, int[] array) {
+        List<String> strings = new ArrayList<>();
+        for(int i = 0;i<array.length;i++){
+            //int j = record[i];
+            StringBuilder stringBuilder = new StringBuilder();
+            for(int j = 0;j<array.length;j++){
+                if(j == array[i]){
+                    stringBuilder.append("Q");
+                }else{
+                    stringBuilder.append(".");
+                }
+            }
+            strings.add(stringBuilder.toString());
+        }
+        res.add(strings);
+        System.out.println(strings.toString());
+
+    }
+
+
 
 }
 

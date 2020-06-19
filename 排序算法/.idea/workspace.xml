@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="79392532-9b4e-4785-bf20-5b4608b88f60" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1dWpTkbdH9Yc7DVwajWWTWJgg0b" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="排序算法" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79392532-9b4e-4785-bf20-5b4608b88f60" name="Default Changelist" comment="" />
+      <created>1592550712406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592550712406</updated>
+      <workItem from="1592550717410" duration="5025000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1403" height="219" key="GridCell.Tab.0.bottom" timestamp="1592559840326">
+      <screen x="0" y="23" width="2560" height="1294" />
+    </state>
+    <state width="1403" height="219" key="GridCell.Tab.0.bottom/0.23.2560.1294@0.23.2560.1294" timestamp="1592559840326" />
+    <state width="1403" height="219" key="GridCell.Tab.0.center" timestamp="1592559840326">
+      <screen x="0" y="23" width="2560" height="1294" />
+    </state>
+    <state width="1403" height="219" key="GridCell.Tab.0.center/0.23.2560.1294@0.23.2560.1294" timestamp="1592559840326" />
+    <state width="1403" height="219" key="GridCell.Tab.0.left" timestamp="1592559840325">
+      <screen x="0" y="23" width="2560" height="1294" />
+    </state>
+    <state width="1403" height="219" key="GridCell.Tab.0.left/0.23.2560.1294@0.23.2560.1294" timestamp="1592559840325" />
+    <state width="1403" height="219" key="GridCell.Tab.0.right" timestamp="1592559840326">
+      <screen x="0" y="23" width="2560" height="1294" />
+    </state>
+    <state width="1403" height="219" key="GridCell.Tab.0.right/0.23.2560.1294@0.23.2560.1294" timestamp="1592559840326" />
+    <state x="1348" y="280" key="new project wizard" timestamp="1592559710733">
+      <screen x="0" y="23" width="2560" height="1294" />
+    </state>
+    <state x="1348" y="280" key="new project wizard/0.23.2560.1294@0.23.2560.1294" timestamp="1592559710733" />
+    <state x="1689" y="338" width="670" height="676" key="search.everywhere.popup" timestamp="1592556035334">
+      <screen x="0" y="23" width="2560" height="1294" />
+    </state>
+    <state x="1689" y="338" width="670" height="676" key="search.everywhere.popup/0.23.2560.1294@0.23.2560.1294" timestamp="1592556035334" />
+  </component>
+</project>

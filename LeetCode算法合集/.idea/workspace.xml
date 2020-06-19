@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb3d8f2e-3763-412b-b43e-a7d27252c346" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/算法学习.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../数据结构-链表/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/CQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/CQueue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/ListNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/Solution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/TreeNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构-链表/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../数据结构-链表/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +85,7 @@
       <workItem from="1591946891061" duration="2477000" />
       <workItem from="1591950796485" duration="175000" />
       <workItem from="1592208891430" duration="1209000" />
+      <workItem from="1592546142844" duration="3001000" />
     </task>
     <task id="LOCAL-00001" summary="持续更新">
       <created>1590632622022</created>
@@ -132,28 +130,28 @@
       <screen x="0" y="23" width="2560" height="1294" />
     </state>
     <state width="420" height="466" key="DebuggerActiveHint/0.23.2560.1294@0.23.2560.1294" timestamp="1590463940451" />
-    <state width="1730" height="236" key="GridCell.Tab.0.bottom" timestamp="1592211724644">
+    <state width="1730" height="148" key="GridCell.Tab.0.bottom" timestamp="1592550583991">
       <screen x="0" y="23" width="2560" height="1294" />
     </state>
-    <state width="1730" height="236" key="GridCell.Tab.0.bottom/0.23.2560.1294@0.23.2560.1294" timestamp="1592211724644" />
+    <state width="1730" height="148" key="GridCell.Tab.0.bottom/0.23.2560.1294@0.23.2560.1294" timestamp="1592550583991" />
     <state width="1730" height="452" key="GridCell.Tab.0.bottom/0.23.2560.1297@0.23.2560.1297" timestamp="1590131790900" />
     <state width="1730" height="453" key="GridCell.Tab.0.bottom/0.23.2560.1298@0.23.2560.1298" timestamp="1584354936329" />
-    <state width="1730" height="236" key="GridCell.Tab.0.center" timestamp="1592211724643">
+    <state width="1730" height="148" key="GridCell.Tab.0.center" timestamp="1592550583990">
       <screen x="0" y="23" width="2560" height="1294" />
     </state>
-    <state width="1730" height="236" key="GridCell.Tab.0.center/0.23.2560.1294@0.23.2560.1294" timestamp="1592211724643" />
+    <state width="1730" height="148" key="GridCell.Tab.0.center/0.23.2560.1294@0.23.2560.1294" timestamp="1592550583990" />
     <state width="1730" height="452" key="GridCell.Tab.0.center/0.23.2560.1297@0.23.2560.1297" timestamp="1590131790899" />
     <state width="1730" height="453" key="GridCell.Tab.0.center/0.23.2560.1298@0.23.2560.1298" timestamp="1584354936328" />
-    <state width="1730" height="236" key="GridCell.Tab.0.left" timestamp="1592211724643">
+    <state width="1730" height="148" key="GridCell.Tab.0.left" timestamp="1592550583990">
       <screen x="0" y="23" width="2560" height="1294" />
     </state>
-    <state width="1730" height="236" key="GridCell.Tab.0.left/0.23.2560.1294@0.23.2560.1294" timestamp="1592211724643" />
+    <state width="1730" height="148" key="GridCell.Tab.0.left/0.23.2560.1294@0.23.2560.1294" timestamp="1592550583990" />
     <state width="1730" height="452" key="GridCell.Tab.0.left/0.23.2560.1297@0.23.2560.1297" timestamp="1590131790898" />
     <state width="1730" height="453" key="GridCell.Tab.0.left/0.23.2560.1298@0.23.2560.1298" timestamp="1584354936328" />
-    <state width="1730" height="236" key="GridCell.Tab.0.right" timestamp="1592211724644">
+    <state width="1730" height="148" key="GridCell.Tab.0.right" timestamp="1592550583990">
       <screen x="0" y="23" width="2560" height="1294" />
     </state>
-    <state width="1730" height="236" key="GridCell.Tab.0.right/0.23.2560.1294@0.23.2560.1294" timestamp="1592211724644" />
+    <state width="1730" height="148" key="GridCell.Tab.0.right/0.23.2560.1294@0.23.2560.1294" timestamp="1592550583990" />
     <state width="1730" height="452" key="GridCell.Tab.0.right/0.23.2560.1297@0.23.2560.1297" timestamp="1590131790899" />
     <state width="1730" height="453" key="GridCell.Tab.0.right/0.23.2560.1298@0.23.2560.1298" timestamp="1584354936329" />
     <state width="1730" height="124" key="GridCell.Tab.1.bottom" timestamp="1590645219111">
@@ -204,37 +202,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>254</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>264</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>265</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>266</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>322</line>
+          <line>323</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>324</line>
+          <line>325</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>313</line>
+          <line>314</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
