@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb3d8f2e-3763-412b-b43e-a7d27252c346" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/算法学习.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../哈希表/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../哈希表/src/com/company/ArrBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../哈希表/src/com/company/ThreadedBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../数据结构-树/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../数据结构-树/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/CQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/CQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/TreeNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../哈希表/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../哈希表/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../哈希表/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../哈希表/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +90,10 @@
       <workItem from="1591950796485" duration="175000" />
       <workItem from="1592208891430" duration="1209000" />
       <workItem from="1592546142844" duration="3001000" />
+      <workItem from="1592820955164" duration="28000" />
+      <workItem from="1592899966905" duration="476000" />
+      <workItem from="1592905868266" duration="265000" />
+      <workItem from="1592982965298" duration="446000" />
     </task>
     <task id="LOCAL-00001" summary="持续更新">
       <created>1590632622022</created>
