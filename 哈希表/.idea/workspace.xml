@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="160c3840-85ce-4b28-9877-f5b62d51b34f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/算法学习.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/ArrBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/ThreadedBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../数据结构-树/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../数据结构-树/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeetCode算法合集/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode算法合集/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeetCode算法合集/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode算法合集/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/哈希表.iml" beforeDir="false" afterPath="$PROJECT_DIR$/哈希表和树.iml" afterDir="false" />
-    </list>
+    <list default="true" id="160c3840-85ce-4b28-9877-f5b62d51b34f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +61,7 @@
       <workItem from="1592804955650" duration="3152000" />
       <workItem from="1592899967628" duration="4013000" />
       <workItem from="1592982902732" duration="4833000" />
+      <workItem from="1593304975013" duration="522000" />
     </task>
     <servers />
   </component>
