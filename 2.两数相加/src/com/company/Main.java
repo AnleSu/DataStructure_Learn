@@ -34,10 +34,10 @@ public class Main {
             cur.next = new ListNode(sum);
 
             cur = cur.next;
-            if (l1.next != null) {
+            if (l1 != null) {
                 l1 = l1.next;
             }
-            if (l2.next != null) {
+            if (l2 != null) {
                 l2 = l2.next;
             }
         }
