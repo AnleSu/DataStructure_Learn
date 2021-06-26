@@ -1,5 +1,9 @@
 package com.company;
 
+import com.sun.org.apache.regexp.internal.REUtil;
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 public class Main {
@@ -42,6 +46,8 @@ public class Main {
 
 
         reversePrint(singleLinkedList.getHead());
+
+
     }
 
 
@@ -254,5 +260,114 @@ class HeroNode {
                 ", nickName='" + nickName + '\'' +
 
                 '}';
+    }
+}
+
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) {val = x; }
+//  反转链表 双指针
+    ListNode reverseList(ListNode head) {
+        ListNode cur = head;
+        ListNode pre = null;
+
+        while (head.next != null) {
+            ListNode temp = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = temp;
+        }
+        return pre;
+    }
+//  反转链表 递归
+    ListNode reverseList2(ListNode head) {
+        return recur(head, null);
+    }
+
+    ListNode recur(ListNode cur, ListNode pre) {
+        if (cur == null) return pre;
+        ListNode res = recur(cur.next, cur);
+        res.next = pre;
+        return res;
+    }
+
+
+}
+
+class Node {
+    int val;
+    Node next;
+    Node random;
+    Node(int x) {
+        this.val = x;
+        this.next = null;
+        this.random = null;
+    }
+//    复制链表
+    public Node copyNormalList(Node head) {
+        Node res = new Node(0);
+            Node pre = res;
+            Node cur = head;
+            while (cur != null) {
+                Node node = new Node(cur.val);
+                pre.next = node;
+                cur = cur.next;
+                pre = cur;
+        }
+        return res.next;
+    }
+//    复制随机链表  辅助哈希表
+    public Node copyRandomList(Node head) {
+        if (head == null) return null;
+        Map<Node, Node> dic = new HashMap<>();
+        Node cur = head;
+        while (cur != null) {
+            dic.put(cur, new Node(cur.val));
+            cur = cur.next;
+        }
+
+        cur = head;
+        while (cur != null) {
+            dic.get(cur).next = cur.next;
+            dic.get(cur).random = cur.random;
+            cur = cur.next;
+        }
+        return dic.get(head);
+
+
+    }
+//复制随机链表  拼接+拆分
+    public Node copyRandomList2(Node head) {
+        if (head == null) return null;
+        Node cur = head;
+//        拼接链表 a->a1->b->b1
+        while (cur != null) {
+            Node temp = new Node(cur.val);
+            temp.next = cur.next;
+            cur.next = temp;
+            cur = temp.next;
+        }
+//        构建新节点的random
+        cur = head;
+        while (cur != null) {
+            if (cur.random != null)
+//                因为是拼接链表 所以random.next才是属于新链表的节点
+                cur.next.random = cur.random.next;
+            cur = cur.next.next;
+        }
+
+//        拆分
+        cur = head.next;
+        Node res = head.next, pre = head;
+        while (cur.next != null) {
+            pre.next = pre.next.next;
+            cur.next = cur.next.next;
+            pre = pre.next;
+            cur = cur.next;
+        }
+        pre.next = null;
+        return res;
+
     }
 }

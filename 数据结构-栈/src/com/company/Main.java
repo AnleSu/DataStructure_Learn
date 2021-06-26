@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Main {
 
@@ -198,4 +199,37 @@ class ArrayStack{
         return stack[top];
     }
 
+}
+
+class MinStack {
+    Stack<Integer> A, B;
+    /** initialize your data structure here. */
+    public MinStack() {
+        A = new Stack<>();
+        B = new Stack<>();
+    }
+
+    public void push(int x) {
+        A.push(x);
+//        注意此处 >=  非严格降序 有等于的情况
+        if (B.empty() || B.peek() >= x) {
+            B.push(x);
+        }
+    }
+//由于 Stack 中存储的是 int 的包装类 Integer ，因此需要使用 equals() 代替 == ，以比较对象的值。
+    public void pop() {
+        if (A.peek().equals(B.peek())) {
+            B.pop();
+        }
+        A.pop();
+
+    }
+
+    public int top() {
+        return A.peek();
+    }
+
+    public int min() {
+        return B.peek();
+    }
 }
