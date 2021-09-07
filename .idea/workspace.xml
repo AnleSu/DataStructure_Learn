@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4e6309-ee10-4e78-b332-91ce45de4b8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/用两个栈实现队列.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法学习.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.两数相加/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2.两数相加/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/算法学习.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构-链表/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构-链表/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构-队列/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构-队列/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/用两个栈实现队列.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法学习.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +60,7 @@
       <workItem from="1624620964764" duration="268000" />
       <workItem from="1624675876156" duration="53000" />
       <workItem from="1624675961103" duration="87000" />
+      <workItem from="1624698515426" duration="109000" />
     </task>
     <servers />
   </component>

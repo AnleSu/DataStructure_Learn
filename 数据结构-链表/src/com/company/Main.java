@@ -16,22 +16,22 @@ public class Main {
 //        链表分带头节点和不带头节点的链表 根据实际需求确定
 //        head节点 1.不存放具体数据  2.表示单链表的头
 
-        HeroNode node1 = new HeroNode(1,"宋江","及时雨");
-        HeroNode node2 = new HeroNode(2,"卢俊义","玉麒麟");
-        HeroNode node3 = new HeroNode(3,"吴用","智多星");
-        HeroNode node4 = new HeroNode(4,"林冲","豹子头");
-        SingleLinkedList singleLinkedList = new SingleLinkedList();
+//        HeroNode node1 = new HeroNode(1,"宋江","及时雨");
+//        HeroNode node2 = new HeroNode(2,"卢俊义","玉麒麟");
+//        HeroNode node3 = new HeroNode(3,"吴用","智多星");
+//        HeroNode node4 = new HeroNode(4,"林冲","豹子头");
+//        SingleLinkedList singleLinkedList = new SingleLinkedList();
 //        singleLinkedList.add(node1);
 //        singleLinkedList.add(node2);
 //        singleLinkedList.add(node3);
 //        singleLinkedList.add(node4);
 
-        singleLinkedList.addByOrder(node2);
-        singleLinkedList.addByOrder(node4);
-        singleLinkedList.addByOrder(node1);
-        singleLinkedList.addByOrder(node3);
-        singleLinkedList.addByOrder(node2);
-        singleLinkedList.list();
+//        singleLinkedList.addByOrder(node2);
+//        singleLinkedList.addByOrder(node4);
+//        singleLinkedList.addByOrder(node1);
+//        singleLinkedList.addByOrder(node3);
+//        singleLinkedList.addByOrder(node2);
+//        singleLinkedList.list();
 
 //        singleLinkedList.delete(1);
 //        singleLinkedList.delete(2);
@@ -39,13 +39,13 @@ public class Main {
 //        singleLinkedList.delete(4);
 //        singleLinkedList.delete(4);
 //        singleLinkedList.list();
-        System.out.println(getLength(singleLinkedList.getHead()));
-
-        HeroNode res = findLastIndexNode(singleLinkedList.getHead(), 4);
-        System.out.println("res = " + res);
-
-
-        reversePrint(singleLinkedList.getHead());
+//        System.out.println(getLength(singleLinkedList.getHead()));
+//
+//        HeroNode res = findLastIndexNode(singleLinkedList.getHead(), 4);
+//        System.out.println("res = " + res);
+//
+//
+//        reversePrint(singleLinkedList.getHead());
 
 
     }
@@ -272,7 +272,7 @@ class ListNode {
         ListNode cur = head;
         ListNode pre = null;
 
-        while (head.next != null) {
+        while (cur != null) {
             ListNode temp = cur.next;
             cur.next = pre;
             pre = cur;
@@ -288,7 +288,7 @@ class ListNode {
     ListNode recur(ListNode cur, ListNode pre) {
         if (cur == null) return pre;
         ListNode res = recur(cur.next, cur);
-        res.next = pre;
+        cur.next = pre;
         return res;
     }
 

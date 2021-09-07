@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42663bd7-9b71-47f2-9aa9-543212b83bf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../用两个栈实现队列.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../算法学习.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2.两数相加/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2.两数相加/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构-栈/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../数据结构-栈/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构-栈/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../数据结构-栈/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/算法学习.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode算法合集/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode算法合集/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode算法合集/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode算法合集/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构-队列/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../数据结构-队列/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../用两个栈实现队列.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../算法学习.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,9 @@
       <workItem from="1624622382074" duration="176000" />
       <workItem from="1624672544872" duration="2000" />
       <workItem from="1624676119611" duration="1593000" />
-      <workItem from="1624688185949" duration="5302000" />
+      <workItem from="1624688185949" duration="5432000" />
+      <workItem from="1624955888812" duration="1495000" />
+      <workItem from="1625126994121" duration="8000" />
     </task>
     <servers />
   </component>

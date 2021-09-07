@@ -13,6 +13,7 @@ public class Main {
 
 
         Solution solution = new  Solution();
+        int res = solution.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4});
 //         int result = solution.findRepeatNumber2(new int[]{2, 3, 5, 1, 0, 5});
 
 //        int result = solution.add(99,23);
@@ -36,7 +37,8 @@ public class Main {
 //        solution.printNumbers(2);
 
 //        solution.buildTree(new int[]{3,9,20,15,7}, new int[]{9,3,15,20,7});
-        solution.solveNQueens(8);
+//        solution.solveNQueens(8);
+
     }
 
     static int integerBreak(int n) {
@@ -111,8 +113,43 @@ public class Main {
         }
         return true;
     }
+//左旋转字符串
+    public String reverseLeftWords(String s, int n) {
+        StringBuilder str = new StringBuilder();
+        for (int i = n; i < s.length(); i++) {
+            str.append(s.charAt(i));
+        }
+        for (int i = 0; i < n; i++) {
+            str.append(s.charAt(i));
+        }
+        return str.toString();
+    }
 
-
+//滑动窗口的最大值
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        if (nums.length == 0 || k == 0) return new int[0];
+//        deque 内的元素 非严格递减
+        Deque<Integer> deque = new LinkedList<>();
+        int[] res = new int[nums.length - k +1];
+//        未形成窗口
+        for (int i = 0; i < k; i++) {
+            while (!deque.isEmpty() && deque.peekLast() < nums[i])
+                deque.removeLast();
+            deque.addLast(nums[i]);
+        }
+//        记录窗口形成后的第一个最大值
+        res[0] = deque.peekFirst();
+//        形成窗口后
+        for (int i = k; i < nums.length; i++) {
+            if (deque.peekFirst() == nums[i])
+                deque.removeFirst();
+            while (!deque.isEmpty() && deque.peekLast() < nums[i])
+                deque.removeLast();
+            deque.addLast(nums[i]);
+            res[i - k + 1] = deque.peekFirst();
+        }
+        return res;
+    }
 
 
 }
@@ -133,6 +170,7 @@ class Solution {
         }
         return -1;
     }
+
 //    时间复杂度O(nlogn)  空间复杂度O(1)
     public  int findRepeatNumber1(int[] nums) {
 //        先排序
@@ -145,6 +183,7 @@ class Solution {
 
         return -1;
     }
+
 // 鸽巢原理 时间复杂度O(n)  空间复杂度O(1)
     public  int findRepeatNumber2(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
@@ -581,7 +620,6 @@ int minArray(int[] numbers) {
             return head;
         }
 
-
         ListNode cur = head;
         ListNode next = null;
         ListNode pre = null;
@@ -731,6 +769,263 @@ int minArray(int[] numbers) {
 
     }
 
+    //把字符串转换成整数
+    public int strToInt(String str) {
+        char[] c = str.trim().toCharArray(); //去空格并转成字符数组
+        if (c.length == 0) return 0;
+        int res = 0, bndry = Integer.MAX_VALUE / 10;
+        int i = 1, sign = 1;//sign 符号位 标记是正负数
+        if (c[0] == '-') sign = -1;
+        else if (c[0] != '+') i = 0;
+        for (int j = i; j < c.length; j++) {
+            if (c[j] < '0' || c[j] > '9') break;//遇到首个非数字的字符时，应立即返回
+            /*
+            * 在每轮数字拼接前，判断 res
+            * res 在此轮拼接后是否超过 2147483647 ，若超过则加上符号位直接返回。
+            * 设数字拼接边界 bndry = 2147483647 / 10 = 214748364 ，则以下两种情况越界：
+
+            * res > bndry & 情况一：执行拼接10×res≥2147483650越界
+            * res = bndry, x > 7 & 情况二：拼接后是2147483648或2147483649越界
+            * */
+            if (res > bndry || res == bndry && c[j] > '7') return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+            //字符转数字： “此数字的 ASCII 码” 与 “ 0 的 ASCII 码” 相减即可；
+            res = res * 10 + (c[j] - '0');
+        }
+        return sign * res;
+    }
+
+//    删除排序数组中的重复项
+//    同类题目 先思考是否进行了排序
+//
+    public int removeDuplicates(int[] nums) {
+        if (nums == null || nums.length == 0 ) return 0;
+        int left = 0;
+//        双指针 left从0开始 right从1开始  两个指针指向的元素相等时  right向右 直到找到一个和left指向元素不同的元素 此时left指向的是第一个不重复的元素需要保留 left向右，并把此时right指向的元素（第二个不重复的元素）赋值给left指向的位置 ;如此遍历到数组末尾
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[left] == nums[i]) continue;
+            if (nums[left] != nums[i]) {
+                left++;
+                nums[left] = nums[i];
+            }
+        }
+        return left + 1;
+    }
+//买卖股票的最佳时机  prices中的每个元素代表每一天股票的价格 想要利益最大 则第i天买 i+1天卖的利益为正则交易 为负则不交易  连续多天股价上涨 等价于连续买入卖出的利益 (贪心算法)
+    public int maxProfit(int[] prices) {
+        if (prices == null || prices.length == 0) return 0;
+        int profit = 0;
+        for (int i = 1; i < prices.length; i++) {
+            int temp = prices[i] - prices[i - 1];
+            if (temp > 0) profit += temp;
+        }
+        return profit;
+    }
+//旋转数组 将数组中的元素向右移动 k 个位置，其中 k 是非负数。
+    public void rotate(int[] nums, int k) {
+        //方法一：使用新数组
+        int n = nums.length;
+        int[] newArr = new int[n];
+        for (int i = 0; i < n; i++) {
+//            这里%n的意义是 当k > n时 向右移动超过远有长度，当n=3时， k=1和k=4（即向右移一步和向右移四步结果是一样的）
+            newArr[(i + k) % n] = nums[i];
+        }
+        System.arraycopy(newArr, 0, nums, 0, n);
+
+//        方法二：
+
+//        方法三：数组反转 先整体反转 在反转前k个，再反转后面的n-k个
+        k %= n;
+        reverseNums(nums, 0, n - 1);
+        reverseNums(nums, 0, k-1);
+        reverseNums(nums, k, n - 1);
+
+    }
+    public void reverseNums(int[] nums, int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start += 1;
+            end -= 1;
+        }
+    }
+
+// 存在重复元素
+    public boolean containsDuplicate(int[] nums) {
+    //方法一： 排序
+        Arrays.sort(nums);
+        int n = nums.length;
+//        注意边界条件n-1
+        for (int i = 0; i < n-1; i++) {
+            if (nums[i] == nums[i + 1])
+                return true;
+        }
+//        return false;
+    //方法二：哈希表
+        Set<Integer> set = new HashSet<Integer>();
+        for(int x : nums) {
+//            set.add(x) 如果set中不包含x可以成功完成add则返回true 如果已包含x则返回false 返回false代表已有重复
+            if (!set.add(x)) {
+                return true;
+            }
+        }
+        return false;
+
+    }
+
+//只出现一次的数字  要求线性时间复杂度（所以不能排序） 不使用额外空间
+/*
+使用异或运算，将所有值进行异或
+异或运算，相异为真，相同为假，所以 a^a = 0 ;0^a = a
+因为异或运算 满足交换律 a^b^a = a^a^b = b 所以数组经过异或运算，单独的值就剩下了
+*/
+    public int singleNumber(int[] nums) {
+        int res = 0;
+        for (int x : nums) {
+            res = res ^ x;
+        }
+        return res;
+    }
+
+// 反转字符串  不额外分配空间
+    public void reverseString(char[] s) {
+        int start = 0;
+        int end = s.length - 1;
+        char temp;
+        while (start < end) {
+            temp = s[start];
+            s[start] = s[end];
+            s[end] = temp;
+            start++;
+            end--;
+        }
+
+    }
+
+// 整数反转  有符号整数要考虑符号一直在第一位 反转后首尾是0要去掉0 还要考虑越界,数值范围为 [−2^31,  2^31 − 1]
+//    每次遍历 x对10取模 拿到末尾数temp 之后再x/10去掉末尾数
+    public int reverse(int x) {
+        int res = 0;
+        while (x != 0) {
+            int temp = x % 10;
+//           少一位的时候已经比2^31 − 1大了 那最后一位没必要再比较了 肯定越界了；或者少一位的时候等于214748364则最后一位最大不超过7
+            if (res > 214748364 || (res == 214748364 && temp > 7)) {
+                return 0;
+            }
+            if (res < -214748364 || (res == -214748364 && temp < -8)) {
+                return 0;
+            }
+//            把末尾数就加到了首尾 实现反转
+            res = res*10 + temp;
+            x /= 10;
+        }
+        return res;
+    }
+
+//字符串中的第一个唯一字符
+    public int firstUniqChar(String s) {
+        Map<Character, Integer> frequency = new HashMap<Character, Integer>();
+//        第一次遍历 记录出现次数
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            frequency.put(c, frequency.getOrDefault(c, 0) + 1);
+        }
+//      第二次遍历 找到出现次数为1的第一个字符 返回index
+        for (int i = 0; i < s.length(); i++) {
+            if (frequency.get(s.charAt(i)) == 1)
+                return i;
+        }
+        return -1;
+    }
+// 因为无法访问node之前的节点 所以让node和下一个节点交换
+    public void deleteNode(ListNode node) {
+        node.val = node.next.val;
+        node.next = node.next.next;
+    }
+// 删除链表的倒数第N个节点
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+// 先找到第n-1个node
+//        ListNode pre = head;
+//        int last = nodeLength(head) - n;
+////        说明要删除的是头节点
+//        if (last == 0) {
+//            return head.next;
+//        }
+//        for (int i = 0; i < last; i++) {
+//            pre = pre.next;
+//        }
+//        pre.next = pre.next.next;
+//        return head;
+
+//        双指针
+        ListNode fast = head;
+        ListNode slow = head;
+        for (int i = 0; i < n; i++) {
+            fast = fast.next;
+        }
+
+        if (fast == null) {
+            return head.next;
+        }
+        while (fast.next != null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+
+        slow.next = slow.next.next;
+        return head;
+    }
+
+//    得到链表长度
+    private int nodeLength(ListNode head) {
+        int length = 0;
+        while (head != null) {
+            length++;
+            head = head.next;
+        }
+        return length;
+    }
+
+//   二叉树的最大深度
+    public int maxDepth(TreeNode root) {
+// 深度优先搜索  如果知道左右子树的最大深度分别为l r ,那么二叉树的最大深度就是max(l,r) + 1
+// 而左右子树的最大深度，也可以用同样的方式计算
+// 递归左右子树，计算最大深度，最后得到二叉树的最大深度 递归访问到空节点时退出
+//        if (root == null) return 0;
+//        else {
+//            int leftH = maxDepth(root.left);
+//            int rightH = maxDepth(root.right);
+//            return Math.max(leftH, rightH);
+//        }
+// 广度优先搜索
+       if (root == null) {
+           return 0;
+       }
+       Queue<TreeNode> queue = new LinkedList<TreeNode>();
+       queue.offer(root);
+       int result = 0;
+       while (!queue.isEmpty()) {
+           int size = queue.size();
+           while (size > 0) {
+               TreeNode node = queue.poll();
+               if (node.left != null) {
+                   queue.offer(node.left);
+               }
+               if (node.right != null) {
+                   queue.offer(node.right);
+               }
+               size--;
+           }
+           result++;
+       }
+       return result;
+
+    }
+//验证二叉搜索 左子树小于根节点 右子树大于根节点  左右子树也都是二叉搜索树
+//    中序遍历
+    public boolean isValidBST(TreeNode root) {
+
+    }
    //字符串循环左移
 
 
@@ -790,6 +1085,34 @@ class CQueue {
             stack2.addLast(stack1.removeLast());
         }
         return stack2.removeLast();
+    }
+}
+//定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的均摊时间复杂度都是O(1)。
+//空间换时间 定义一个双向队列
+class MaxQueue {
+    Queue<Integer> queue;
+    Deque<Integer> deque;
+    public MaxQueue() {
+        queue = new LinkedList<>();
+        deque = new LinkedList<>();
+    }
+
+    public int max_value() {
+        return deque.isEmpty()?-1:deque.peekFirst();
+    }
+
+    public void push_back(int value) {
+        queue.offer(value);
+        while (!deque.isEmpty() && deque.peekLast() < value)
+            deque.pollLast();
+        deque.offerLast(value);
+    }
+
+    public int pop_front() {
+        if (queue.isEmpty()) return -1;
+        if (queue.peek().equals(deque.peekFirst()))
+            deque.pollFirst();
+        return queue.poll();
     }
 }
 
