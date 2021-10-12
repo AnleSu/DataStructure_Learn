@@ -13,7 +13,7 @@ public class Main {
 
 
         Solution solution = new  Solution();
-        int res = solution.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4});
+        int[] res = solution.twoSum(new int[]{2,7,11,15},9);
 //         int result = solution.findRepeatNumber2(new int[]{2, 3, 5, 1, 0, 5});
 
 //        int result = solution.add(99,23);
@@ -820,6 +820,19 @@ int minArray(int[] numbers) {
         }
         return profit;
     }
+
+    public int maxProfit2(int prices[]) {
+        int minPrice = Integer.MAX_VALUE;
+        int profit = 0;
+        for (int i = 0; i < prices.length; i++) {
+            if (minPrice > prices[i]) { //记录最低价
+                minPrice = prices[i];
+            } else if (profit < prices[i] - minPrice) {
+                profit = prices[i] - minPrice; //记录最大利润
+            }
+        }
+        return profit;
+    }
 //旋转数组 将数组中的元素向右移动 k 个位置，其中 k 是非负数。
     public void rotate(int[] nums, int k) {
         //方法一：使用新数组
@@ -1023,8 +1036,135 @@ int minArray(int[] numbers) {
     }
 //验证二叉搜索 左子树小于根节点 右子树大于根节点  左右子树也都是二叉搜索树
 //    中序遍历
+    long pre = Long.MIN_VALUE;
     public boolean isValidBST(TreeNode root) {
+        //递归 + 区间
+//       return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
+        // 中序遍历  递归+预先初始值
+        if (root == null) {
+            return true;
+        }
+        if (!isValidBST(root.left)) {
+            return false;
+        }
+        if (root.val <= pre) return false;
+        pre = root.val;
+        return isValidBST(root.right);
 
+    }
+    private boolean isValidBST(TreeNode node, long lower, long upper) {
+        if (node == null) {
+            return true;
+        }
+        if (node.val <= lower || node.val >= upper) {
+            return false;
+        }
+        return isValidBST(node.left, lower, node.val) && isValidBST(node.right, node.val, upper);
+    }
+
+//    合并两个有序数组
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+//方法一： 先合并 再排序  利用系统API  其实就没有利用到两个数组已经是有序的了
+//        方法二：双指针  或逆向双指针
+        int len1 = m - 1;
+        int len2 = n - 1;
+        int len = m + n - 1;
+        int cur;
+        while (len1 >= 0 || len2 >= 0) {
+            if (len1 == -1) {
+                cur = nums2[len2--];
+            } else if (len2 == -1) {
+                cur = nums1[len1--];
+            } else if (nums1[len1] > nums2[len2]) {
+                cur = nums1[len1--];
+            } else {
+                cur = nums2[len2--];
+            }
+            nums1[len--] = cur;
+        }
+
+
+    }
+
+//    爬楼梯  动态规划
+    public int climbStairs(int n) {
+//        int[] dp = new int[n + 1];
+//        dp[0] = 1;
+//        dp[1] = 1;
+//        for (int i = 2; i <= n; i++) {
+//            dp[i] = dp[i - 1] + dp[i - 2];
+//        }
+//        return dp[n];
+//        优化空间复杂度
+        int p = 0, q = 0, r = 1;
+        for (int i = 1; i <= n; i++) {
+            p = q;
+            q = r;
+            r = p + q;
+        }
+        return r;
+
+    }
+
+//    最大子序和   动态规划
+//    用 f(i) 代表以第 i 个数结尾的「连续子数组的最大和」
+//    f(i) = max{f(i-1)+nums[i] , f(i-1)}
+//    也可以用贪心算法  类似买卖股票那个题
+    public int maxSubArray(int[] nums) {
+//        int size = nums.length;
+//        int[] dp = new int[size]; //创建了一个数组造成了空间的浪费
+//        dp[0] = nums[0]; //动态规划的终止条件
+//        int result = dp[0];
+//        for (int i = 1; i < size; i++) {
+//            dp[i] = Math.max(dp[i-1] + nums[i], nums[i]);
+//            result = Math.max(dp[i],result);
+//        }
+//        return result;
+
+
+//        优化空间，可以改为用一个变量记录前面的值  因为只跟前面一个值有关系 再往前的数据就没用了
+        int length = nums.length;
+        int cur = nums[0];
+        int max = cur;
+        for (int i = 1; i < length; i++) {
+//            大于0 就继续相加 小于0 就要抛弃前面的子数组 重新求和
+            cur = Math.max(cur, 0) + nums[i];
+            //记录最大值
+            max = Math.max(max, cur);
+        }
+        return max;
+
+    }
+
+//    两数之和 给定一个数组和一个目标数字 target 求数组nums中 和 = target的两个数的下标 并放在数组中返回
+    public int[] twoSum(int[] nums, int target) {
+        int result[] = new int[2];
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+//        for (int i = 0; i < nums.length; i++) {
+//            if (map.containsKey(target - nums[i])) {
+//                    result[0] = i;
+//            }
+//            map.put(nums[i], target - nums[i]);
+//
+//        }
+//        int temp = nums[result[0]];
+//        for (int i = 0; i < nums.length; i++) {
+//            if (map.get(temp) == nums[i]) {
+//                result[1] = i;
+//                break;
+//            }
+//        }
+//        return result;
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(target - nums[i])) {
+                result[0] = map.get(target - nums[i]);
+                result[1] = i;
+                break;
+            } else {
+                map.put(nums[i], i);
+            }
+        }
+        return result;
     }
    //字符串循环左移
 

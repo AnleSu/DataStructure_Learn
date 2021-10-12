@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb3d8f2e-3763-412b-b43e-a7d27252c346" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/算法学习.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/CQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/CQueue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/ListNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/MaxQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/MaxQueue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/MyStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/MyStack.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/Solution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn/com/company/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn/com/company/TreeNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/com/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构-链表/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../数据结构-链表/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构-链表/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../数据结构-链表/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../用两个栈实现队列.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../算法学习.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +114,9 @@
       <workItem from="1629253570652" duration="2569000" />
       <workItem from="1629880229182" duration="454000" />
       <workItem from="1629972148667" duration="896000" />
+      <workItem from="1631777941369" duration="3471000" />
+      <workItem from="1632642434708" duration="5047000" />
+      <workItem from="1634009309607" duration="7880000" />
     </task>
     <task id="LOCAL-00001" summary="持续更新">
       <created>1590632622022</created>
@@ -162,50 +153,71 @@
     <option name="LAST_COMMIT_MESSAGE" value="持续更新" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2518" height="512" key="GridCell.Tab.0.bottom" timestamp="1627036184625">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="428" height="466" key="DebuggerActiveHint" timestamp="1634024776139">
+      <screen x="0" y="25" width="2560" height="1277" />
+    </state>
+    <state width="428" height="466" key="DebuggerActiveHint/0.25.2560.1277@0.25.2560.1277" timestamp="1634024776139" />
+    <state width="2040" height="271" key="GridCell.Tab.0.bottom" timestamp="1634033836258">
+      <screen x="0" y="25" width="2560" height="1277" />
     </state>
     <state width="2518" height="512" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1627036184625" />
+    <state width="1415" height="441" key="GridCell.Tab.0.bottom/0.23.2560.1284@0.23.2560.1284" timestamp="1632739728506" />
     <state width="2518" height="512" key="GridCell.Tab.0.bottom/0.23.2560.1296@0.23.2560.1296" timestamp="1627008231998" />
-    <state width="2518" height="512" key="GridCell.Tab.0.center" timestamp="1627036184624">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="2040" height="271" key="GridCell.Tab.0.bottom/0.25.2560.1277@0.25.2560.1277" timestamp="1634033836258" />
+    <state width="2040" height="271" key="GridCell.Tab.0.center" timestamp="1634033836257">
+      <screen x="0" y="25" width="2560" height="1277" />
     </state>
     <state width="2518" height="512" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1627036184624" />
+    <state width="1415" height="441" key="GridCell.Tab.0.center/0.23.2560.1284@0.23.2560.1284" timestamp="1632739728506" />
     <state width="2518" height="512" key="GridCell.Tab.0.center/0.23.2560.1296@0.23.2560.1296" timestamp="1627008231997" />
-    <state width="2518" height="512" key="GridCell.Tab.0.left" timestamp="1627036184624">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="2040" height="271" key="GridCell.Tab.0.center/0.25.2560.1277@0.25.2560.1277" timestamp="1634033836257" />
+    <state width="2040" height="271" key="GridCell.Tab.0.left" timestamp="1634033836257">
+      <screen x="0" y="25" width="2560" height="1277" />
     </state>
     <state width="2518" height="512" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1627036184624" />
+    <state width="1415" height="441" key="GridCell.Tab.0.left/0.23.2560.1284@0.23.2560.1284" timestamp="1632739728505" />
     <state width="2518" height="512" key="GridCell.Tab.0.left/0.23.2560.1296@0.23.2560.1296" timestamp="1627008231996" />
-    <state width="2518" height="512" key="GridCell.Tab.0.right" timestamp="1627036184625">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="2040" height="271" key="GridCell.Tab.0.left/0.25.2560.1277@0.25.2560.1277" timestamp="1634033836257" />
+    <state width="2040" height="271" key="GridCell.Tab.0.right" timestamp="1634033836258">
+      <screen x="0" y="25" width="2560" height="1277" />
     </state>
     <state width="2518" height="512" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1627036184625" />
+    <state width="1415" height="441" key="GridCell.Tab.0.right/0.23.2560.1284@0.23.2560.1284" timestamp="1632739728506" />
     <state width="2518" height="512" key="GridCell.Tab.0.right/0.23.2560.1296@0.23.2560.1296" timestamp="1627008231997" />
-    <state width="2518" height="512" key="GridCell.Tab.1.bottom" timestamp="1627036184626">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="2040" height="271" key="GridCell.Tab.0.right/0.25.2560.1277@0.25.2560.1277" timestamp="1634033836258" />
+    <state width="2040" height="271" key="GridCell.Tab.1.bottom" timestamp="1634033836261">
+      <screen x="0" y="25" width="2560" height="1277" />
     </state>
     <state width="2518" height="512" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1627036184626" />
+    <state width="1415" height="441" key="GridCell.Tab.1.bottom/0.23.2560.1284@0.23.2560.1284" timestamp="1632739728508" />
     <state width="2518" height="512" key="GridCell.Tab.1.bottom/0.23.2560.1296@0.23.2560.1296" timestamp="1627008232104" />
-    <state width="2518" height="512" key="GridCell.Tab.1.center" timestamp="1627036184625">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="2040" height="271" key="GridCell.Tab.1.bottom/0.25.2560.1277@0.25.2560.1277" timestamp="1634033836261" />
+    <state width="2040" height="271" key="GridCell.Tab.1.center" timestamp="1634033836259">
+      <screen x="0" y="25" width="2560" height="1277" />
     </state>
     <state width="2518" height="512" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1627036184625" />
+    <state width="1415" height="441" key="GridCell.Tab.1.center/0.23.2560.1284@0.23.2560.1284" timestamp="1632739728507" />
     <state width="2518" height="512" key="GridCell.Tab.1.center/0.23.2560.1296@0.23.2560.1296" timestamp="1627008232104" />
-    <state width="2518" height="512" key="GridCell.Tab.1.left" timestamp="1627036184625">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="2040" height="271" key="GridCell.Tab.1.center/0.25.2560.1277@0.25.2560.1277" timestamp="1634033836259" />
+    <state width="2040" height="271" key="GridCell.Tab.1.left" timestamp="1634033836259">
+      <screen x="0" y="25" width="2560" height="1277" />
     </state>
     <state width="2518" height="512" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1627036184625" />
+    <state width="1415" height="441" key="GridCell.Tab.1.left/0.23.2560.1284@0.23.2560.1284" timestamp="1632739728507" />
     <state width="2518" height="512" key="GridCell.Tab.1.left/0.23.2560.1296@0.23.2560.1296" timestamp="1627008232103" />
-    <state width="2518" height="512" key="GridCell.Tab.1.right" timestamp="1627036184626">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="2040" height="271" key="GridCell.Tab.1.left/0.25.2560.1277@0.25.2560.1277" timestamp="1634033836259" />
+    <state width="2040" height="271" key="GridCell.Tab.1.right" timestamp="1634033836261">
+      <screen x="0" y="25" width="2560" height="1277" />
     </state>
     <state width="2518" height="512" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1627036184626" />
+    <state width="1415" height="441" key="GridCell.Tab.1.right/0.23.2560.1284@0.23.2560.1284" timestamp="1632739728508" />
     <state width="2518" height="512" key="GridCell.Tab.1.right/0.23.2560.1296@0.23.2560.1296" timestamp="1627008232104" />
-    <state x="2054" y="321" width="670" height="676" key="search.everywhere.popup" timestamp="1628229577807">
-      <screen x="0" y="23" width="2560" height="1292" />
+    <state width="2040" height="271" key="GridCell.Tab.1.right/0.25.2560.1277@0.25.2560.1277" timestamp="1634033836261" />
+    <state x="2054" y="320" width="670" height="669" key="search.everywhere.popup" timestamp="1634022915041">
+      <screen x="0" y="25" width="2560" height="1277" />
     </state>
     <state x="2054" y="321" width="670" height="676" key="search.everywhere.popup/0.23.2560.1292@0.23.2560.1292" timestamp="1628229577807" />
+    <state x="2054" y="320" width="670" height="669" key="search.everywhere.popup/0.25.2560.1277@0.25.2560.1277" timestamp="1634022915041" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -234,6 +246,21 @@
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
           <line>810</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>1098</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>1157</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>1166</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
